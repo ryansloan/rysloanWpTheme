@@ -1,0 +1,139 @@
+a {
+color: #003366;
+}
+a:visited {
+color: #0066cc;
+}
+
+#siteTitle {
+font-family: "Helvetica Neue Light", "Calibri Light","Arial Narrow", sans-serif;
+
+}
+
+#siteName {
+font-size: 32pt;
+color: #666666;
+}
+
+#siteTagLine{
+font-size: 20pt;
+color: #666666;
+font-family: "Helvetica Neue", "Calibri Light", "Arial Narrow", sans-serif;
+}
+
+#sidebar {
+position: absolute;
+min-width: 200px;
+min-height: 300px;
+height: 100%;
+left: 0px;
+background: #DEDEDE;
+font-family: "Helvetica Neue", "Calibri Light","Arial Narrow", sans-serif;
+color: #262626;
+}
+#sidebar ul {
+list-style-type: none;
+padding-left: 10px;
+
+}
+#sidebar ul a {
+color: #262626;
+text-decoration: none;
+}
+#sidebar ul a:hover {
+text-decoration: underline;
+}
+
+#sidebar .profilePhoto {
+width: 198px;
+}
+
+.socialMediaIcons {
+text-align: center;
+}
+.socialMediaIcons a, img {
+text-decoration: none;
+outline: none;
+border: none;
+}
+.socialMediaIcons img {
+width: 32px;
+height: 32px;
+}
+#mainContent {
+position: absolute;
+width: 60%;
+left: 220px;
+font-family: "Helvetica Neue", sans-serif;
+font-size: 16px;
+
+}
+#mainContent p {
+line-height: 24px;
+}
+
+.blogPost {
+color: #111111;
+padding-bottom: 30px;
+}
+.blogPost h1 {
+font-family: "Helvetica Neue Light", "Calibri Light","Arial Narrow", sans-serif;
+font-size: 18pt;
+color: #666666;
+font-weight: bold;
+margin-bottom: 0px;
+}
+.blogPost h1 a {
+color: #666666;
+text-decoration: none;
+}
+
+.blogPost h1 a:hover {
+text-decoration: underline;
+}
+
+a.more-link {
+font-weight: bold;
+color: #003366;
+text-decoration: none;
+
+}
+a.more-link:hover {
+text-decoration: underline;
+}
+.entry-meta {
+font-family: "Helvetica Neue Light", "Calibri Light","Arial Narrow", sans-serif;
+font-size: 10pt;
+color: #666666;
+}
+.entry-meta a {
+text-decoration: none;
+color: #666666;
+}
+.entry-meta a:hover {
+text-decoration: underline;
+}
+
+.post-comments {
+padding-left: 30px;
+}
+
+.wp-caption {
+text-align: center;
+background: #ededed;
+padding-left: 5px;
+padding-right: 5px;
+padding-top: 5px;
+}
+
+.wp-caption p {
+font-family: "Helvetica Neue Light", "Calibri Light","Arial Narrow", sans-serif;
+font-size: 9pt;
+color: #444444;
+margin-bottom: 5px;
+}
+
+
+.alignright {
+float: right;
+}
