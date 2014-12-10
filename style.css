@@ -1,139 +1,256 @@
 a {
-color: #003366;
+	color: #003366;
 }
 a:visited {
-color: #0066cc;
+	color: #0066cc;
 }
 
 #siteTitle {
-font-family: "Helvetica Neue Light", "Calibri Light","Arial Narrow", sans-serif;
-
+	display: inline;
+	font-family: "HelveticaNeue-CondensedBlack","Calibri","Arial", sans-serif;
+	margin-left:40px;
 }
 
-#siteName {
-font-size: 32pt;
-color: #666666;
+#siteName a {
+	font-size: 32pt;
+	color: #262626;
+	text-decoration:none;
 }
 
 #siteTagLine{
-font-size: 20pt;
-color: #666666;
-font-family: "Helvetica Neue", "Calibri Light", "Arial Narrow", sans-serif;
+	font-size: 20pt;
+	color: #262626;
+	font-family: "Helvetica Neue", "Calibri Light", "Arial Narrow", sans-serif;
 }
 
-#sidebar {
-position: absolute;
-min-width: 200px;
-min-height: 300px;
-height: 100%;
-left: 0px;
-background: #DEDEDE;
-font-family: "Helvetica Neue", "Calibri Light","Arial Narrow", sans-serif;
-color: #262626;
+#welcomeBlock {
+	float:left;
+	margin-left:40px;
+	margin-top:80px;
+	margin-right: 120px;
+	max-width:440px;
+	font-family: "Helvetica Neue","Calibri","Arial",sans-serif;
+	font-color: #262626;
 }
-#sidebar ul {
-list-style-type: none;
-padding-left: 10px;
-
+#welcomeGreeting {
+	font-family: "HelveticaNeue-CondensedBlack",sans-serif;
+	font-size: 24pt;
+	
 }
-#sidebar ul a {
-color: #262626;
-text-decoration: none;
+#welcomeMessage {
+	font-size: 18pt;
+	line-height:1.2;
+	padding-bottom:20px;
 }
-#sidebar ul a:hover {
-text-decoration: underline;
-}
-
-#sidebar .profilePhoto {
-width: 198px;
+#welcomeMessage p {
+	margin-top: 0px;
+	margin-bottom: 4px;
 }
 
-.socialMediaIcons {
-text-align: center;
+#welcomeBlock .menu ul {
+	display: inline;
+	padding: 0px;
+	font-size: 12pt;
+	font-family: "HelveticaNeue-CondensedBold",sans-serif;
 }
-.socialMediaIcons a, img {
-text-decoration: none;
-outline: none;
-border: none;
+#welcomeBlock .menu li {
+	list-style-type:none;
+	display:inline;
+	padding-right: 10px;
+	padding-left: 4px;
 }
-.socialMediaIcons img {
-width: 32px;
-height: 32px;
+#welcomeBlock .menu a {
+	color:#003399;
+	text-decoration:none;
 }
+.headerImage {
+	margin-top:40px;
+	display:inline-block;
+	max-width:400px;
+	min-width:200px;
+
+}
+.headerImage img {
+	max-width:100%;
+	height:auto;
+}
+
+.welcomeSubsection {
+	float:left;
+	margin-left:40px;
+	margin-right: 120px;
+	max-width:440px;
+	font-family: "Helvetica Neue","Calibri","Arial",sans-serif;
+	font-color: #262626;
+}
+.welcomeSubsection h1 {
+	font-family: "HelveticaNeue-CondensedBold",sans-serif;
+	font-size:28pt;
+	color:#262626;
+}
+.welcomeSubsection .blogPost h1 {
+	font-family: "Helvetica Neue Light", "Calibri Light","Arial Narrow", sans-serif;
+	font-size: 18pt;
+	color: #262626;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+.welcomeSubsection .blogPost h1 a {
+	color: #262626;
+	text-decoration: none;
+}
+.welcomeSubsection .blogPost h1 a:hover {
+	color: #444444;
+	text-decoration: none;
+}
+.welcomeSubsection .socialMediaList {
+	font-size:18pt;
+	list-style-type:none;
+}
+.welcomeSubsection .socialMediaList a {
+	color:#003399;
+	text-decoration:none;
+}
+
+#header {
+	position:relative;
+}
+#siteMenu {
+	margin-left:40px;
+	display:inline-block;
+}
+#siteMenu .menu ul {
+	display: inline;
+	padding: 0px;
+	font-size: 12pt;
+	font-family: "HelveticaNeue-CondensedBold",sans-serif;
+}
+#siteMenu .menu li {
+	list-style-type:none;
+	display:inline;
+	padding-right: 10px;
+	padding-left: 4px;
+}
+#siteMenu .menu a {
+	color:#003399;
+	text-decoration:none;
+}
+
 #mainContent {
-position: absolute;
-width: 60%;
-left: 220px;
-font-family: "Helvetica Neue", sans-serif;
-font-size: 16px;
+	margin-left:40px;
+	max-width:760px;
+	font-family: "Helvetica Neue", sans-serif;
+	font-size: 16px;
 
 }
 #mainContent p {
-line-height: 24px;
+	line-height: 24px;
 }
 
 .blogPost {
-color: #111111;
-padding-bottom: 30px;
+	color: #111111;
+	padding-bottom: 30px;
 }
-.blogPost h1 {
-font-family: "Helvetica Neue Light", "Calibri Light","Arial Narrow", sans-serif;
-font-size: 18pt;
-color: #666666;
-font-weight: bold;
-margin-bottom: 0px;
-}
-.blogPost h1 a {
-color: #666666;
-text-decoration: none;
+#mainContent .blogPost h1 {
+	font-family: "Helvetica Neue Light", "Calibri Light","Arial Narrow", sans-serif;
+	font-size: 18pt;
+	color: #262626;
+	font-weight: bold;
+	margin-bottom: 0px;
 }
 
-.blogPost h1 a:hover {
-text-decoration: underline;
+#mainContent .blogPost h1 a {
+	color: #262626;
+	text-decoration: none;
+}
+#mainContent .blogPost h2 {
+	font-family: "Helvetica Neue Light", "Calibri Light","Arial Narrow", sans-serif;
+	font-size: 14pt;
+	color: #262626;
+	margin-bottom: 0px;
+}
+#mainContent .blogPost h1 a:hover {
+	text-decoration: underline;
+}
+
+.blogPost table,td {
+	border: 1px solid #d9d9d9;
 }
 
 a.more-link {
-font-weight: bold;
-color: #003366;
-text-decoration: none;
-
+	font-weight: bold;
+	color: #003366;
+	text-decoration: none;
 }
 a.more-link:hover {
-text-decoration: underline;
+	text-decoration: underline;
 }
 .entry-meta {
-font-family: "Helvetica Neue Light", "Calibri Light","Arial Narrow", sans-serif;
-font-size: 10pt;
-color: #666666;
+	font-family: "Helvetica Neue Light", "Calibri Light","Arial Narrow", sans-serif;
+	font-size: 10pt;
+	color: #666666;
 }
 .entry-meta a {
-text-decoration: none;
-color: #666666;
+	text-decoration: none;
+	color: #666666;
 }
 .entry-meta a:hover {
-text-decoration: underline;
+	text-decoration: underline;
 }
 
 .post-comments {
-padding-left: 30px;
+	padding-left: 30px;
 }
 
 .wp-caption {
-text-align: center;
-background: #ededed;
-padding-left: 5px;
-padding-right: 5px;
-padding-top: 5px;
+	text-align: center;
+	background: #ededed;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	margin-top: 5px;
 }
 
 .wp-caption p {
-font-family: "Helvetica Neue Light", "Calibri Light","Arial Narrow", sans-serif;
-font-size: 9pt;
-color: #444444;
-margin-bottom: 5px;
+	font-family: "Helvetica Neue Light", "Calibri Light","Arial Narrow", sans-serif;
+	font-size: 9pt;
+	color: #444444;
+	margin-bottom: 5px;
 }
 
 
 .alignright {
-float: right;
+	float: right;
+}
+
+
+#comments h3 {
+	font-family: "Helvetica Neue Light", "Calibri Light","Arial Narrow", sans-serif;
+	font-size: 14pt;
+	color: #333333;
+	margin-bottom: 0px;
+}
+
+#comments #respond {
+	background: #dedede;
+}
+
+#comments .form-allowed-tags {
+	font-family: "Helvetica Neue", "Calibri","Arial", sans-serif;
+	font-size: 10pt;	
+}
+.commentlist {
+	list-style-type:none;
+}
+.comment {
+	margin-bottom: 16px;
+}
+
+.comment-author img{
+	margin-right: 8px;
+	float:left;
+}
+
+.comment-meta {
+	font-size: 8pt;
 }
