@@ -232,8 +232,8 @@ a.more-link:hover {
 }
 
 
-#comments h3 {
-	font-family: "Helvetica Neue Light", "Calibri Light","Arial Narrow", sans-serif;
+#comments h1 {
+	font-family: "HelveticaNeue-CondensedBold","Arial",sans-serif;
 	font-size: 14pt;
 	color: #333333;
 	margin-bottom: 0px;
@@ -242,7 +242,12 @@ a.more-link:hover {
 #comments #respond {
 	background: #dedede;
 }
-
+#reply-title {
+	font-family: "HelveticaNeue-CondensedBold","Arial",sans-serif;
+	font-size: 14pt;
+	color: #333333;
+	margin-bottom: 0px;	
+}
 #comments .form-allowed-tags {
 	font-family: "Helvetica Neue", "Calibri","Arial", sans-serif;
 	font-size: 10pt;	
@@ -253,7 +258,11 @@ a.more-link:hover {
 .comment {
 	margin-bottom: 16px;
 }
-
+.comment-form-comment textarea {
+	display:block;
+	height:200px;
+	width: 680px;
+}
 .comment-author img{
 	margin-right: 8px;
 	float:left;
