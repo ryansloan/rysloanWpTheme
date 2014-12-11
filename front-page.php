@@ -11,18 +11,23 @@ get_header(); ?>
 <div class='welcomeSubsection'>
 	<h1>Latest Blog Post</h1>
 
-	<?php global $more; $more=0; //This overrides the default which is to ignore the "<!--more-->" tag on single post pages. 
-	query_posts('cat=1'); 
-	if ( have_posts() ) : the_post(); 
+	<?php 
+	$args = array(
+    'post_status' => 'publish',
+    'no_found_rows' => true );
+	wp_reset_query(); $posts = new WP_Query($args);
+	if ($posts->have_posts()) : /*while ($posts->have_posts()) :*/ $posts->the_post();
 	?>
 		<div class="blogPost">
 			<h1><a href='<?php the_permalink(); ?>'><?php the_title(); ?></a></h1>
 			<div class='entry-meta'><span class='post-date'><?php the_time('F jS, Y'); ?></span></div>
 			<div class='entry'>
+				<?php global $more; $more=0;  	//This overrides the default which is to ignore the "<!--more-->" tag on single post pages.  
+												//Why 0 instead of 1 for "on", you ask? Because wordpress. ?>
 				<?php the_content("Read the rest of this post"); ?>
 			</div>
 		</div>
-	<?php  endif;?>
+	<?php  /*endwhile;*/  wp_reset_postdata(); endif;?>
 </div>
 <div class='welcomeSubSection'>
 	<h1>Follow Me On...</h1>
