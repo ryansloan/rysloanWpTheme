@@ -2,7 +2,7 @@
 <head>
 <title>
 <?php 
-if (is_home()) { 
+if (is_front_page()) { 
 	print get_bloginfo('name')." | ".get_bloginfo('description');
 } 
 else { 
@@ -17,7 +17,7 @@ else {
 			<span id="siteName"><a href='<?php bloginfo( 'wpurl' ); ?>'><?php bloginfo('name'); ?></a></span>
 		</div>
 		<?php
-			if (!is_home()) {
+			if (!is_front_page()) {
 				print "<div id='siteMenu'>";
 				wp_nav_menu();
 				print" </div>";
