@@ -1,7 +1,5 @@
 <?php 
 get_header(); ?>
-
-<?php /*get_sidebar();*/ ?>
 <div id='welcomeBlock'>
 	<div id='welcomeGreeting'>Hi! I'm Ryan.</div>
 	<div id='welcomeMessage'><p>I'm a 20-something Georgia Tech Grad and former Microsoftie.</p><p>I like solving interesting problems.</p></div>

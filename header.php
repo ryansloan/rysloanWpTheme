@@ -3,10 +3,10 @@
 <title>
 <?php 
 if (is_home()) { 
-echo "Ryan Sloan";
+	print get_bloginfo('name')." | ".get_bloginfo('description');
 } 
 else { 
-wp_title("Ryan Sloan | ");
+	print single_post_title()." | ".get_bloginfo('name');
 } ?>
 </title>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
@@ -16,7 +16,6 @@ wp_title("Ryan Sloan | ");
 		<div id="siteTitle">
 			<span id="siteName"><a href='<?php bloginfo( 'wpurl' ); ?>'><?php bloginfo('name'); ?></a></span>
 		</div>
-<!--<span id="siteTagLine"><?php echo get_bloginfo('description', 'display'); ?> </span>-->
 		<?php
 			if (!is_home()) {
 				print "<div id='siteMenu'>";
