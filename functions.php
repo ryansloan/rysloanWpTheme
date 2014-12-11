@@ -10,7 +10,7 @@ function custom_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 $header_image_args=array(
-	'width'		=> 198,
+	'width'		=> 400,
 	'default-image' => get_template_directory_uri().'/images/header.jpg',
 	'uploads'	=> true,
 );

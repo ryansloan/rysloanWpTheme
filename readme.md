@@ -3,6 +3,7 @@
 1. Create a new page for the front landing Page. The content of that page is what will be displayed in the blurb beside the picture.
 2. Create a new page for the blog post page.
 3. In Settings->Reading, update "Front Page Displays" to "Static Page", and select the page from step 1 for Front Page, the page from Step 2 for Posts Page.
+4. To finish setup of the front page, be sure to set a header image. (Appearance->Header, Select Image)
 
 ##Menus Setup##
 There are three menus:

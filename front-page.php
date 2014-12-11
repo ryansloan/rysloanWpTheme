@@ -6,7 +6,7 @@ get_header(); ?>
 		<?php wp_nav_menu(array( 'theme_location' => 'frontpage-menu' )); ?>
 </div>
 <div class='headerImage'>
-	<img src="http://localhost:8888/ryan/rjs/wp-content/uploads/2014/12/snorkel.jpg"/>
+	<img src="<?php echo get_header_image(); ?>" />
 </div>
 <div class='welcomeSubsection'>
 	<h1>Latest Blog Post</h1>
