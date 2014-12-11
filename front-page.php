@@ -1,7 +1,7 @@
 <?php 
 get_header(); ?>
 <div id='welcomeBlock'>
-	<div id='welcomeGreeting'>Hi! I'm Ryan.</div>
+
 	<div id='welcomeMessage'>	<?php if ( have_posts() ) : the_post(); the_content(); endif; ?></div>
 		<?php wp_nav_menu(); ?>
 </div>
@@ -34,8 +34,4 @@ get_header(); ?>
 	</ul>
 
 </div>
-<!--
-while ( have_posts() ) :
-endwhile; 
-	-->
 <?php get_footer(); ?>
