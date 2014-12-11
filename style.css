@@ -47,19 +47,19 @@ a:visited {
 	margin-bottom: 4px;
 }
 
-#welcomeBlock .menu ul {
+#welcomeBlock ul {
 	display: inline;
 	padding: 0px;
 	font-size: 12pt;
 	font-family: "HelveticaNeue-CondensedBold",sans-serif;
 }
-#welcomeBlock .menu li {
+#welcomeBlock li {
 	list-style-type:none;
 	display:inline;
 	padding-right: 10px;
 	padding-left: 4px;
 }
-#welcomeBlock .menu a {
+#welcomeBlock li a {
 	color:#003399;
 	text-decoration:none;
 }
@@ -103,11 +103,12 @@ a:visited {
 	color: #444444;
 	text-decoration: none;
 }
-.welcomeSubsection .socialMediaList {
+.welcomeSubsection #followMeContainer ul {
 	font-size:18pt;
 	list-style-type:none;
+	padding-left:0px;
 }
-.welcomeSubsection .socialMediaList a {
+.welcomeSubsection #followMeContainer a {
 	color:#003399;
 	text-decoration:none;
 }
@@ -119,19 +120,19 @@ a:visited {
 	margin-left:40px;
 	display:inline-block;
 }
-#siteMenu .menu ul {
+#siteMenu ul {
 	display: inline;
 	padding: 0px;
 	font-size: 12pt;
 	font-family: "HelveticaNeue-CondensedBold",sans-serif;
 }
-#siteMenu .menu li {
+#siteMenu li {
 	list-style-type:none;
 	display:inline;
 	padding-right: 10px;
 	padding-left: 4px;
 }
-#siteMenu .menu a {
+#siteMenu li a {
 	color:#003399;
 	text-decoration:none;
 }

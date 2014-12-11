@@ -3,7 +3,7 @@ get_header(); ?>
 <div id='welcomeBlock'>
 
 	<div id='welcomeMessage'>	<?php if ( have_posts() ) : the_post(); the_content(); endif; ?></div>
-		<?php wp_nav_menu(); ?>
+		<?php wp_nav_menu(array( 'theme_location' => 'frontpage-menu' )); ?>
 </div>
 <div class='headerImage'>
 	<img src="http://localhost:8888/ryan/rjs/wp-content/uploads/2014/12/snorkel.jpg"/>
@@ -31,12 +31,8 @@ get_header(); ?>
 </div>
 <div class='welcomeSubSection'>
 	<h1>Follow Me On...</h1>
-	<ul class='socialMediaList'>
-		<li><a href='http://github.com/ryansloan'>GitHub</a></li>
-		<li><a href='http://github.com/ryansloan'>Facebook</a></li>
-		<li><a href='http://github.com/ryansloan'>Twitter</a></li>
-		<li><a href='http://github.com/ryansloan'>LinkedIn</a></li>
-	</ul>
-
+<div id='followMeContainer'>
+		<?php wp_nav_menu(array('theme_location' => 'follow-menu' )); 			?>
+</div>
 </div>
 <?php get_footer(); ?>

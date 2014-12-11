@@ -16,4 +16,14 @@ $header_image_args=array(
 );
 
 add_theme_support('custom-header', $header_image_args);
+
+function register_custom_menus() {
+	register_nav_menus(array(
+		'header-menu'=>__('Header Menu'),
+		'frontpage-menu'=>__('Frontpage Menu'),
+		'follow-menu'=>__('"Follow Me On" Menu')
+		));
+}
+add_action('init','register_custom_menus')
+
 ?>

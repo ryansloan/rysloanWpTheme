@@ -19,7 +19,7 @@ else {
 		<?php
 			if (!is_front_page()) {
 				print "<div id='siteMenu'>";
-				wp_nav_menu();
+				wp_nav_menu(array( 'theme_location' => 'header-menu' ));
 				print" </div>";
 			}
 
