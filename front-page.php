@@ -25,7 +25,7 @@ get_header(); ?>
 			<span class='post-categories'>Filed under: 
 				<?php $post_categories = wp_get_post_categories(get_the_id()); 
 					$output_links=array_map(function ($c) { $cat_name = get_category($c)->name; return "<a href='".esc_url(get_category_link($c))."'>".$cat_name."</a>";}, $post_categories);
-					printf(implode(",",$output_links));
+					printf(implode(", ",$output_links));
 				?>
 			</span>
 			</div>
