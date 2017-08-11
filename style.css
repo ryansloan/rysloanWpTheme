@@ -279,3 +279,16 @@ a.more-link:hover {
 .comment-meta {
 	font-size: 8pt;
 }
+
+.category-description h1 {
+	font-size: 14pt;
+	margin-top: 8px;
+
+}
+.category-description {
+	font-family: "Helvetica Neue","Calibri","Arial",sans-serif;
+	font-color: #262626;
+	font-size: 14pt;
+	line-height:1.2;
+	padding-bottom:20px;
+}
