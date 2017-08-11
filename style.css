@@ -248,7 +248,7 @@ a.more-link:hover {
 }
 
 #comments #respond {
-	background: #dedede;
+	background: #ffffff;
 }
 #reply-title {
 	font-family: "HelveticaNeue-CondensedBold","Arial",sans-serif;
@@ -291,4 +291,12 @@ a.more-link:hover {
 	font-size: 18pt;
 	margin-top: 8px;
 	color:#444444;
+}
+.comment-notes {
+	font-size:12px;
+	display:inline;
+}
+.logged-in-as {
+	font-size:12px;
+	display:inline;
 }
