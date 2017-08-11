@@ -6,6 +6,9 @@
 if (is_front_page()) { 
 	print get_bloginfo('name')." | ".get_bloginfo('description');
 } 
+elseif (is_category()) {
+	print single_cat_title()." posts | ".get_bloginfo('name');
+}
 else { 
 	print single_post_title()." | ".get_bloginfo('name');
 } ?>
