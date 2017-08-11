@@ -21,7 +21,14 @@ get_header(); ?>
 	?>
 		<div class="blogPost">
 			<h1><a href='<?php the_permalink(); ?>'><?php the_title(); ?></a></h1>
-			<div class='entry-meta'><span class='post-date'><?php the_time('F jS, Y'); ?></span></div>
+			<div class='entry-meta'><span class='post-date'><?php the_time('F jS, Y'); ?></span>
+			<span class='post-categories'>Filed under: 
+				<?php $post_categories = wp_get_post_categories(get_the_id()); 
+					$output_links=array_map(function ($c) { $cat_name = get_category($c)->name; return "<a href='".esc_url(get_category_link($c))."'>".$cat_name."</a>";}, $post_categories);
+					printf(implode(",",$output_links));
+				?>
+			</span>
+			</div>
 			<div class='entry'>
 				<?php global $more; $more=0;  	//This overrides the default which is to ignore the "<!--more-->" tag on single post pages.  
 												//Why 0 instead of 1 for "on", you ask? Because wordpress. ?>
