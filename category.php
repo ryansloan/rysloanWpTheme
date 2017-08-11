@@ -3,7 +3,7 @@
 get_header(); ?>
 <div id='mainContent'>
 <div class='category-description'>
-	<h1>Posts Filed "<?php echo single_cat_title(); ?>"</h1>
+	<div class='category-name'>Posts Filed "<?php echo single_cat_title(); ?>"</div>
 	<?php
 					$category_description = category_description();
 					if ( ! empty( $category_description ) )
