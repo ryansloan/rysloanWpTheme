@@ -1,5 +1,6 @@
 <html>
 <head>
+<?php include_once('ga_config.php'); ?>
 <title>
 <?php 
 if (is_front_page()) { 
@@ -25,4 +26,3 @@ else {
 
 		?>
 	</div>
-

@@ -95,6 +95,12 @@ a:visited {
 	font-weight: bold;
 	margin-bottom: 0px;
 }
+.blogPost ol {
+	line-height: 24px;
+}
+.blogPost ul {
+	line-height: 24px;
+}
 .welcomeSubsection .blogPost h1 a {
 	color: #262626;
 	text-decoration: none;
@@ -205,7 +211,9 @@ a.more-link:hover {
 .entry-meta a:hover {
 	text-decoration: underline;
 }
-
+.post-categories {
+	margin-left:28px;
+}
 .post-comments {
 	padding-left: 30px;
 }
