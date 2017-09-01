@@ -237,8 +237,12 @@ a.more-link:hover {
 
 .alignright {
 	float: right;
+	margin-left:16px;
 }
-
+.alignleft {
+	float: right;
+	margin-right:16px;
+}
 
 #comments h1 {
 	font-family: "HelveticaNeue-CondensedBold","Arial",sans-serif;
